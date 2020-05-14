@@ -1,5 +1,6 @@
 import json
-from flask import Flask, request
+from flask_cors import CORS
+from flask import Flask, request, render_template
 from flask_jwt import JWT, jwt_required, current_identity
 from sqlalchemy.exc import IntegrityError
 from datetime import timedelta 
