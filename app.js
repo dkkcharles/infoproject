@@ -159,7 +159,8 @@ async function createClaimsForm(event){
     }
   }
 
-  for(var j=0; j<3, j++){
+  for(var j=0; j<3; j++)
+  {
     h+= `<tbody><tr>
               <td>this</td>
               <td>is</td>
