@@ -43,12 +43,12 @@ class Course(db.Model):
     done = db.Column(db.Boolean, nullable=False)
 
     def toDict(self):
-    return {
-      'id': self.id,
-      'course code': self.code,
-      'date': self.date,
-      'period of contact hours': self.contacthours,
-      'no. of contact hours': self.numhours,
-      'userid': self.userid,
-      'done': self.done
+       return {
+           'id': self.id,
+           'course code': self.code,
+           'date': self.date,
+           'period of contact hours': self.contacthours,
+           'no. of contact hours': self.numhours,
+           'userid': self.userid,
+           'done': self.done
     }
